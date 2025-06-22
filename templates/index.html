@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Laman Utama{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <!-- Logo dengan animasi -->
+    <img src="{{ url_for('static', filename='images/logo.png') }}"
+         alt="Logo Sekolah"
+         width="150"
+         class="my-4 animate__animated animate__zoomIn">
+
+    <!-- Tajuk dengan animasi -->
+    <h1 class="mb-4 animate__animated animate__fadeInDown" style="color: rgb(250, 250, 250);">Selamat Datang ke Laman Web ICT!</h1>
+
+
+    <!-- Perenggan utama -->
+    <p class="lead animate__animated animate__fadeInUp" style="color:rgb(255, 255, 255) ;">laman utama untuk subjek ICT menggunakan Python Flask dan Bootstrap.</p>
+
+    <!-- Arahan tambahan -->
+    <p class="animate__animated animate__fadeInUp animate__delay-1s" style="color:rgb(255, 255, 255) ;">Tekan menu atas untuk navigasi ke bahagian lain.</p>
+</div>
+{% endblock %}
