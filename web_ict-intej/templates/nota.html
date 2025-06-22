@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Nota ICT{% endblock %}
+{% block body_class %}nota-background{% endblock %}
+
+{% block content %}
+<h2 class="title text-white text-center mb-4" data-aos="fade-down">Nota ICT</h2>
+
+<div class="nota-container">
+  <div class="nota-card" data-aos="zoom-in">
+    <h1 class="lead animate__animated animate__fadeInUp" style="color:rgb(255, 255, 255) ;">TINGKATAN 1</h1>
+    <p><a href="/nota/pengenalan">PENGENALAN ICT</a></p>
+    <p><a href="{{ url_for('static', filename='NOTA PENGENALAN KOMPUTER.pdf') }}" target="_blank">Pengenalan ICT (PDF)</a></p>
+    <p><a href="/nota/pengenalan">NOTA WORD & DOCS</a></p>
+    <p><a href="/nota/pengenalan">NOTA EXCEL & SHEETS</a></p>
+  </div>
+<br>
+<br>
+  <div class="nota-card" data-aos="zoom-in">
+    <h2 class="lead animate__animated animate__fadeInUp" style="color:rgb(255, 255, 255) ;">TINGKATAN 2</h2>
+    <p><a href="/nota/pengenalan">INTRO. TO GOOD PRESENTATION</a></p>
+    <p><a href="/nota/pengenalan">NOTA POWERPOINT & GOOGLE SLIDE</a></p>
+    <p><a href="/nota/pengenalan">NOTA CANVA</a></p>
+  </div>
+<br>
+<br>
+  <div class="nota-card" data-aos="zoom-in">
+    <h3 class="lead animate__animated animate__fadeInUp" style="color:rgb(255, 255, 255) ;">TINGKATAN 3</h3>
+    <p><a href="/nota/pengenalan">NOTA MICROSOFT ACCESS</a></p>
+    <p><a href="/nota/pengenalan">NOTA LOCKER STUDIO</a></p>
+    <p><a href="/nota/pengenalan">NOTA ASAS CODING-PYTHON</a></p>
+  </div>
+<br>
+<br>
+  <div class="nota-card" data-aos="zoom-in">
+    <h4 class="lead animate__animated animate__fadeInUp" style="color:rgb(255, 255, 255) ;">TINGKATAN 4 </h4>
+    <p><a href="/nota/pengenalan">NOTA MACROMEDIA FLASH</a></p>
+    <p><a href="/nota/pengenalan">NOTA PHOTOPEA</a></p>
+  </div>
+</div>
+{% endblock %}
